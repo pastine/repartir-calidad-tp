@@ -10,7 +10,7 @@ plugins {
 
 group = 'ar.com.grupoesfera'
 version = '1.0'
-sourceCompatibility = '17'
+sourceCompatibility = '16'
 
 repositories {
 	mavenCentral()
