@@ -7,3 +7,5 @@ Característica: Crear Grupo para repartir gastos
     Escenario: No puedo crear un grupo con un único miembro
       Cuando el usuario intenta crear un grupo indicando un único miembro
       Entonces no debería crear el grupo con un único miembro
+
+  Regla: El total de gastos de un grupo debe ser positivo
