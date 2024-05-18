@@ -25,8 +25,19 @@ public class TotalDebeSerPositivoSteps extends FastCucumberSteps {
         grupo.setTotal(new BigDecimal(-10));
     }
 
+    @Cuando("el usuario tiene un grupo valido")
+    public void elUsuarioTieneUnGrupoValido() {
+        List<String> miembros = new LinkedList<String>();
+        miembros.add( "Oscar" );
+        miembros.add( "Miguel" );
+
+        grupo = new Grupo();
+        grupo.setMiembros( miembros );
+        grupo.setTotal(new BigDecimal(10));
+    }
+
     @Entonces("no debería crear el grupo con un total de gastos negativo")
-    public void noDeberiaCrearElGrupoConUnUnicoMiembro() {
+    public void noDeberíaCrearElGrupoConUnTotalDeGastosNegativo() {
       assertThat( this.grupo.estaFormado() ).isFalse();
     }
 }
