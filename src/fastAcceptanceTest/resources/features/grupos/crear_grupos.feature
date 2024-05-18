@@ -20,3 +20,5 @@ Característica: Crear Grupo para repartir gastos
       Entonces no debería crear el grupo con un total de gastos negativo
 
     Escenario: No puedo crear un grupo con un total de gastos en cero
+      Cuando el usuario intenta crear un grupo con un total de gastos en 0
+      Entonces no debería poder crear el grupo
