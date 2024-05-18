@@ -69,6 +69,6 @@ public class Grupo {
 
     public boolean estaFormado() {
 
-        return (miembros != null) && (miembros.size() > 1) && (total.compareTo(BigDecimal.ZERO) >= 0);
+        return (miembros != null) && (miembros.size() > 1) && (total.compareTo(BigDecimal.ZERO) > 0);
     }
 }
