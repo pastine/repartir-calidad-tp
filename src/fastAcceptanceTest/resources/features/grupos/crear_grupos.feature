@@ -16,5 +16,5 @@ Característica: Crear Grupo para repartir gastos
 
     Escenario: No puedo cambiar un grupo para que tenga un total de gastos negativo
       Cuando el usuario tiene un grupo valido
-      Y luego intenta cambiar el total de gastos a negativo
+      Y luego cambia el total de gastos a negativo
       Entonces no debería crear el grupo con un total de gastos negativo
