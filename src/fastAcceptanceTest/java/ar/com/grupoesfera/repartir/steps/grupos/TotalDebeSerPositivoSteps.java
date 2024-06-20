@@ -27,6 +27,6 @@ public class TotalDebeSerPositivoSteps extends FastCucumberSteps {
 
     @Entonces("no debería crear el grupo con un total de gastos negativo")
     public void noDeberíaCrearElGrupoConUnTotalDeGastosNegativo() {
-      assertThat( this.grupo.estaFormado() ).isFalse();
+      assertThat(this.grupo.getTotal()).isEqualTo(BigDecimal.ZERO);
     }
 }
