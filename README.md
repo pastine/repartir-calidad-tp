@@ -14,6 +14,10 @@ Para ejecutar todas las pruebas
 ./gradlew check --info
 ```
 
+```
+./gradlew fastAcceptanceTest
+```
+
 ## Para levantar en el ambiente local
 
 ```
